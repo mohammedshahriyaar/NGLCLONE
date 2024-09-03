@@ -17,7 +17,7 @@ import { Loader2, RefreshCcw, WineOff } from "lucide-react"
 import mongoose from "mongoose"
 
 
-const page = () => {
+const Page = () => {
   const [messages, setMessages] = useState<Message[]>([]);
   const[isLoading, setIsLoading] = useState(false)
   const [isSwitchLoading, setIsSwitchLoading] = useState(false)
@@ -212,4 +212,4 @@ const page = () => {
 
 }
 
-export default page
+export default Page
