@@ -93,12 +93,10 @@ const Page = () => {
     if(!session || !session.user) return
 
     fetchMessages()
-    console.log(messages)
     fetchAcceptMessage()
-  },[session,setValue,fetchAcceptMessage,fetchMessages])
+  },[fetchAcceptMessage,fetchMessages])
 
   useEffect(() => {
-    fetchMessages()
     if (process) {
       setHostName(window.location.host);
     }
