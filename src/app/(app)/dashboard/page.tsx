@@ -94,13 +94,13 @@ const Page = () => {
 
     fetchMessages()
     fetchAcceptMessage()
-  },[fetchAcceptMessage,fetchMessages,messages])
+  },[fetchAcceptMessage,fetchMessages])
 
-  // useEffect(() => {
-  //   if (process) {
-  //     setHostName(window.location.host);
-  //   }
-  // }, []);
+  useEffect(() => {
+    if (process) {
+      setHostName(window.location.host);
+    }
+  }, [fetchMessages]);
 
   //handling switch change
 
@@ -130,7 +130,6 @@ const Page = () => {
   const username = session?.user.username
 
   // const baseUrl =`${window.location.protocol}//${window.location.host}`
-  const hostNamee = `${window.location.host}`
   const profileUrl = `${hostName}/u/${username}`
 
   const copyToClipboard = () => {
