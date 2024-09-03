@@ -100,6 +100,7 @@ const Page = () => {
     if (process) {
       setHostName(window.location.host);
     }
+    fetchMessages()
   }, [fetchMessages]);
 
   //handling switch change
