@@ -25,7 +25,7 @@ import { MessageSchema } from "@/schemas/messageSchema";
 import { ApiResponse } from "@/types/ApiResponse";
 
 
-const page = () => {
+const Page = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [isSuggestButtonLoading, setIsSuggestButtonLoading] = useState(false);
   const { toast } = useToast();
@@ -202,4 +202,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
