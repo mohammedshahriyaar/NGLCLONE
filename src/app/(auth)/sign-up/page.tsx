@@ -15,6 +15,7 @@ import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import {Loader2} from "lucide-react"
 import { useDebounceCallback } from 'usehooks-ts'
+import React from "react"
 const Page = () => {
   const [username, setUsername]= useState('');
   const [usernameMessage, setUsernameMessage] = useState('');
@@ -160,7 +161,7 @@ const Page = () => {
           {
             isSubmitting ? (
               <>
-              <Loader2 className='mr-2 h-4 2-4 animate-spin'/> Please Wait
+                <Loader2 className='mr-2 h-4 2-4 animate-spin'/> Please Wait
               </>
             ) : ('signup')
           }
